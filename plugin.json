@@ -1,0 +1,21 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "walkley-data",
+  "version": "0.1.0",
+  "description": "Three lookups through a hosted MCP server: is a date a working day in mainland China (State Council holidays and weekend makeup workdays), known OSV.dev advisories for one exact npm, PyPI, Go, crates.io or Maven package version, and recent SEC Form 4 insider trades for a US company. 20 free calls per IP per day for the first two; past that, and always for insider trades, a tool answers with a paid x402 URL (USDC on Base) that this plugin cannot pay.",
+  "author": {
+    "name": "walkley",
+    "url": "https://github.com/walkley"
+  },
+  "homepage": "https://mvqz0m8d6g.execute-api.ap-northeast-1.amazonaws.com/",
+  "repository": "https://github.com/walkley/walkley-data-hermes-plugin",
+  "license": "MIT",
+  "keywords": ["china", "holidays", "workday", "osv", "vulnerabilities", "dependencies", "sec", "edgar", "insider-trading", "x402", "mcp"],
+  "extensions": {
+    "com.nousresearch.hermes": {
+      "servers": {
+        "walkley-data": { "trust": "untrusted" }
+      }
+    }
+  }
+}
